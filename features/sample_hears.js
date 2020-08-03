@@ -46,19 +46,18 @@ module.exports = function(controller) {
         });
     });
 
-    controller.hears(new RegExp(/\b(?:payment|where's my payment|where payment|pay|money|missing benefits|didn't get benefits|no benefits|did not get benefits)\b/gi), 'message', async (bot, message) => {
+    //controller.hears(new RegExp(/\b(?:payment|where's my payment|where payment|pay|money|missing benefits|didn't get benefits|no benefits|did not get benefits)\b/gi), 'message', async (bot, message) => {
 
-        await bot.reply(message, {
-            text: 'It will take about 10 days to process your certification if you submitted it by mail and/or requested your benefits by check. If it has been more than 10 days ...'
-        });
-    });
+    //    await bot.reply(message, {
+    //        text: 'It will take about 10 days to process your certification if you submitted it by mail and/or requested your benefits by check. If it has been more than 10 days ...'
+    //    });
+    //});
 
-    controller.hears(new RegExp(/\b(?:site not working|tech issues|tech problems|technical issue|help with site|technical support)\b/gi), 'message', async (bot, message) => {
-
-        await bot.reply(message, {
-            text: 'To get technical help with registration, password resets, EDD Account Numbers, and how to use UI Online : Call 1-833-978-2511 (English and Spanish) from 8 AM to 8 PM pst.'
-        });
-    });
+    //controller.hears(new RegExp(/\b(?:site not working|tech issues|tech problems|technical issue|help with site|technical support)\b/gi), 'message', async (bot, message) => {
+    //    await bot.reply(message, {
+    //        text: 'To get technical help with registration, password resets, EDD Account Numbers, and how to use UI Online : Call 1-833-978-2511 (English and Spanish) from 8 AM to 8 PM pst.'
+    //    });
+    //});
 
 }
 
