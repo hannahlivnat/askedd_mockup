@@ -16,7 +16,7 @@ html {
 
 .wrapper {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 .wrapper:after {
   content: "";
@@ -128,11 +128,10 @@ a.button:hover {
   padding: 0;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 12rem 1fr 3rem;
+  grid-template-rows: 12rem 1fr;
   grid-template-areas: 
   "header"
-  "store"
-  "footer";
+  "main";
 }
 .main-content header {
   grid-area: header;
@@ -161,12 +160,12 @@ a.button:hover {
   font-size: 2rem;
 }
 .main-content main {
-  grid-area: store;
+  grid-area: main;
 }
 
 .main-content main section {
   width: 70%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background-color: whitesmoke;
   border-radius: 5px;
   text-shadow: 2px 2px #ccc;
@@ -178,17 +177,42 @@ a.button:hover {
 .main-content main section h4 {
   font-size: 1.5rem;
   color: #2d4a67;
+  text-align: center;
 }
 
 .main-content main section p {
   font-size: 1rem;
-  color: #2d4a67;}
+  color: #2d4a67;
+}
+
+.main-content main section a {
+  color: #2d4a67;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+.main-content main section a:hover {
+  text-decoration: underline; 
+}
+
+.benefit-access {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2rem;
+
+}
 
 .alternate-footer {
-  grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: absolute;
+  bottom: 5px; 
+  right: 5px;
+  height: 3rem;
 }
 
 .alternate-footer button {
@@ -256,7 +280,7 @@ a.button:hover {
 }
 
 #message_window .close-chat a:hover {
-  color: #d4a6a9;
+  color: #2b4768;
 }
 
 #message_window section {
@@ -284,7 +308,7 @@ a.button:hover {
   background: none;
   border: 0;
   cursor: pointer;
-  color: #d4a6a9;
+  color: #2b4768;
   font-weight: italic;
 }
 #message_window form {
