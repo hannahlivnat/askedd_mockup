@@ -60,5 +60,13 @@ module.exports = function(controller) {
         });
     });
 
+    controller.hears(new RegExp(/\b(?:covid-19|covid)\b/gi), 'message', async (bot, message) => {
+
+        await bot.reply(message, {
+            text: 'The Pandemic Unemployment Assistance is helping unemployed Californians who are not usually eligible for regular unemployment insurance. This includes business owners, self-employed workers, independing contractors, and those with limited work experience. The program includes up to 46 weeks of benefits from February 2 2020 through December26 2020. It launched with up to 39 weeks of benefits, and an extra 7 weeks was recently added.'
+        });
+    });
+
+
 }
 
