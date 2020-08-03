@@ -1,10 +1,8 @@
-# Botkit Starter Kit
+# EDD MOCKUP WITH CHAT BOT 
 
-This is a Botkit starter kit for web, created with the [Yeoman generator](https://github.com/howdyai/botkit/tree/master/packages/generator-botkit#readme).
+** IN PROGRESS ***
 
-To complete the configuration of this bot, make sure to update the included `.env` file with your platform tokens and credentials.
+This is my project for August 2020 - A mockup of the California EDD website using the Botkit library and Node.js. 
 
-[Botkit Docs](https://botkit.ai/docs/v4)
-
-This bot is powered by [a folder full of modules](https://botkit.ai/docs/v4/core.html#organize-your-bot-code). 
-Edit the samples, and add your own in the [features/](features/) folder.
+## LIVE APP 
+https://mintbean-chatbot.herokuapp.com/
