@@ -59,6 +59,7 @@ controller.ready(() => {
                 // do not continue middleware!
                 return false;
             }
+
         });
     }
 

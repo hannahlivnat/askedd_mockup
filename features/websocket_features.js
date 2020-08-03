@@ -11,15 +11,15 @@ module.exports = function(controller) {
         controller.hears(new RegExp('quick'), 'message', async (bot, message) => {
 
             await bot.reply(message,{
-                text: 'Here are some quick replies',
+                text: 'Here are some options you can choose',
                 quick_replies: [
                     {
-                        title: 'Foo',
-                        payload: 'foo',
+                        title: 'Payments',
+                        payload: 'payments',
                     },
                     {
-                        title: 'Bar',
-                        payload: 'bar',
+                        title: 'Help',
+                        payload: 'help',
                     }
                 ]
             });

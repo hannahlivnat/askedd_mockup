@@ -128,7 +128,7 @@ a.button:hover {
   padding: 0;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 20rem 1fr 3rem;
+  grid-template-rows: 12rem 1fr 3rem;
   grid-template-areas: 
   "header"
   "store"
@@ -141,19 +141,48 @@ a.button:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
-.main-content h2 {
+.main-content header h2{
   position: absolute; 
-  top: 5rem; 
-  left: 10rem;
+  top: 1rem; 
+  left: 5rem;
   color: white;
   text-shadow: 2px 2px 4px black;
   font-size: 3rem;
 }
+
+.main-content header h4 {
+  position: absolute; 
+  top: 4rem; 
+  left: 5rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2rem;
+}
 .main-content main {
   grid-area: store;
 }
+
+.main-content main section {
+  width: 70%;
+  margin: 2rem auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  text-shadow: 2px 2px #ccc;
+  padding: 15px 10px; 
+  color: #fff;
+  text-shadow: none;
+}
+
+.main-content main section h4 {
+  font-size: 1.5rem;
+  color: #2d4a67;
+}
+
+.main-content main section p {
+  font-size: 1rem;
+  color: #2d4a67;}
 
 .alternate-footer {
   grid-area: footer;
@@ -169,7 +198,7 @@ a.button:hover {
   font-weight: 300;
   font-style: italic;
   font-size: 1rem;
-  background-color: #d4a6a9; 
+  background-color: #2b4768; 
   color: #FFF;
   border: none;
   outline: none;
