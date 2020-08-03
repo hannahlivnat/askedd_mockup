@@ -487,4 +487,19 @@ var Botkit = {
     // your page initialization code here
     // the DOM will be available here
     Botkit.boot();
+    const chat = document.querySelector('#message_window');
+    const openChatButton = document.querySelector('#open-chat');
+    const noChatFooter = document.querySelector('.alternate-footer');
+    const closeChatButton = document.querySelector('#close-chat');
+    
+    //open the chat
+    openChatButton.addEventListener("click", () => {
+        chat.style.display = "flex";
+        noChatFooter.style.display = "none";
+    })
+
+    closeChatButton.addEventListener("click", () => {
+        chat.style.display = "none";
+        noChatFooter.style.display = "none";
+    })
 })();

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300');
+
 /* shared botkit ui styles */
 * {
   box-sizing: border-box;
@@ -9,13 +11,12 @@ html {
   padding: 0;
   font-size: 18px;
   background-color: #FFF;
-  font-family: "helvetica", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .wrapper {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  height:
 }
 .wrapper:after {
   content: "";
@@ -119,19 +120,77 @@ a.button:hover {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+/*main content */
+.main-content {
+  width: 100%;
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20rem 1fr 3rem;
+  grid-template-areas: 
+  "header"
+  "store"
+  "footer";
+}
+.main-content header {
+  grid-area: header;
+}
+.main-content header img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+.main-content h2 {
+  position: absolute; 
+  top: 5rem; 
+  left: 10rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 3rem;
+}
+.main-content main {
+  grid-area: store;
+}
+
+.alternate-footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.alternate-footer button {
+  padding: 5px 10px; 
+  margin: auto 15px auto 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+  background-color: #d4a6a9; 
+  color: #FFF;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 4px #ccc;
+  cursor: pointer;
+}
+
 /* chat client */
 #message_window {
   background: #FFFFFF;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
-  /*height: 500px;
-  width: 320px;*/
-  height: 100%;
-  width: 100%;
-  /*margin: 2rem auto;*/
-  display: flex;
+  border-top: 1px solid #CCC;
+  height: 500px;
+  width: 320px;
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
   flex-direction: column;
-  font-family: "helvetica", sans-serif;
 }
 #message_window .disconnected {
   background: #FFFFCC;
@@ -152,7 +211,7 @@ a.button:hover {
   padding: 0.25rem;
   display: block;
 }
-#message_window .powered_by {
+#message_window .close-chat {
   flex-shrink: 0;
   text-align: center;
   border-bottom: 1px solid #CCC;
@@ -160,14 +219,17 @@ a.button:hover {
   padding: 0.25rem;
   color: #666;
 }
-#message_window .powered_by a {
+
+#message_window .close-chat a {
   text-decoration: none;
   color: #666;
+  cursor: pointer;
 }
-#message_window .powered_by img {
-  position: relative;
-  top: 2px;
+
+#message_window .close-chat a:hover {
+  color: #d4a6a9;
 }
+
 #message_window section {
   flex-grow: 1;
   flex-direction: column-reverse;
@@ -184,7 +246,7 @@ a.button:hover {
 }
 #message_window footer input[type=text] {
   flex-grow: 1;
-  font-size: 1.25rem;
+  font-size: 1rem;
   outline: none;
   border: none;
 }
@@ -193,8 +255,8 @@ a.button:hover {
   background: none;
   border: 0;
   cursor: pointer;
-  color: blue;
-  font-weight: bold;
+  color: #d4a6a9;
+  font-weight: italic;
 }
 #message_window form {
   display: flex;
@@ -341,5 +403,7 @@ a.button:hover {
 #welcome {
   margin-left: 440px;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
