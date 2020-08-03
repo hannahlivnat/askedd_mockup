@@ -8,18 +8,26 @@ module.exports = function(controller) {
 
         console.log('Loading sample web features...');
 
-        controller.hears(new RegExp('quick'), 'message', async (bot, message) => {
+        controller.hears(new RegExp(/\b(?:hello|hi|howdy|greetings|hola|oi|hey|quick|options|help|start)\b/gi), 'message', async (bot, message) => {
 
             await bot.reply(message,{
-                text: 'Here are some options you can choose',
+                text: 'Hi there, how can we help you? Here are some options you can choose',
                 quick_replies: [
                     {
-                        title: 'Payments',
-                        payload: 'payments',
+                        title: 'COVID-19',
+                        payload: 'covid-19',
                     },
                     {
-                        title: 'Help',
-                        payload: 'help',
+                        title: 'Tech Issues',
+                        payload: 'tech issues',
+                    },
+                    {
+                        title: 'Where\'s my Payment?',
+                        payload: 'payments'
+                    }, 
+                    {
+                        title: 'Certify for Benefits',
+                        payload: 'certify'
                     }
                 ]
             });
