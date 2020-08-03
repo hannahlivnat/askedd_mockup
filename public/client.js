@@ -498,6 +498,6 @@ var Botkit = {
 
     closeChatButton.addEventListener("click", () => {
         chat.style.display = "none";
-        noChatFooter.style.display = "flex";
+        noChatFooter.style.display = "none";
     })
 })();
