@@ -1,8 +1,9 @@
-# EDD MOCKUP WITH CHAT BOT 
+## Welcome to the Ask Edd Mockup Project! 
 
-** IN PROGRESS ***
+This is a UI/UX and Development collaboration which started August 2020 to create an improved user experience on the Ask EDD page for unemployed Californians.
 
-This is my project for August 2020 - A mockup of the California EDD website using the Botkit library and Node.js. 
+[Current Ask EDD Page](https://askedd.edd.ca.gov/)
 
-## LIVE APP 
-https://mintbean-chatbot.herokuapp.com/
+[Our Current Page](https://mintbean-chatbot.herokuapp.com/)
+
+To learn more, visit our [Project Wiki](https://github.com/hannahlivnat/askedd_mockup/wiki)
